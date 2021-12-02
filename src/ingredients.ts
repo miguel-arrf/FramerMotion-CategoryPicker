@@ -15,24 +15,27 @@ export const allIngredients = [
     icon: "Natural Language Processing",
     label: "Tomato",
     color: "#ff0055",
+    shadowColor: "#ff0055A0",
     colorOpacity: "#ff005520",
-    textColor: "red-400",
+    textColor: "rgb(248,113,133)",
     component: LNComponent
   },
   {
     icon: "Complex Science Networks",
     label: "Lettuce",
     color: "#0099ff",
+    shadowColor: "#0099ffA0",
     colorOpacity: "#0099ff20",
-    textColor: "blue-400",
+    textColor: "rgb(96, 165, 250)",
     component: CRCComponent
   },
   {
     icon: "Information Processing",
     label: "Cheese",
     color: "#22cc88",
+    shadowColor: "#22cc88A0",
     colorOpacity: "#22cc8820",
-    textColor: "green-400",
+    textColor: "rgb(52, 211, 153)",
     component: MyComponent
   }
 ];
