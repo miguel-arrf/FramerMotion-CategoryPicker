@@ -13,11 +13,11 @@ export default function App() {
   return (
     <div className=" h-screen bg-black text-white">
       <div className=" ">
-        <motion.div layout>
+        <motion.div layout="scale">
           <div className="relative overflow-hidden  md:pt-20 lg:pb-20 md:pb-14 sm:p-0 bg-black">
             <div className="lg:container lg:mx-auto">
               <div className="grid items-center grid-cols-1 md:grid-cols-12 md:gap-8 lg:gap-10 xl:gap-28 ">
-                <div className="bg-whitecol-span-10 col-start-2 px-4 py-10  transition secondBlock md:rounded-2xl sm:py-10 md:py-16  rounded-xl">
+                <div className=" col-span-10 col-start-2 px-4 py-10  transition secondBlock md:rounded-2xl sm:py-10 md:py-16  rounded-xl">
                   <div
                     className="grid sm:grid-cols-3 grid-cols-1 gap-y-4 sm:gap-4 rounded-lg p-4"
                     style={{ backgroundColor: "#1A1A1A" }}
@@ -64,7 +64,7 @@ export default function App() {
                     </div>
 
                     <motion.div
-                      layout
+                      layout="scale"
                       key={"4"}
                       layoutId={"5"}
                       className="z-10 p-1 col-span-2 rounded-lg p-3"
