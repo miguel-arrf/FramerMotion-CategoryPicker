@@ -13,51 +13,69 @@ export default function App() {
   return (
     <div className=" h-screen bg-black text-white">
       <div className="p-10 rounded-lg flex  ">
-        <div className="bg-black p-3 rounded-lg  text-center w-full">
-          <div className="p-1 bg-white rounded-lg ">
-            <motion.div
-              animate={{ backgroundColor: selectedTab.color }}
-              className="flex rounded-lg justify-center content-center"
-            >
-              <motion.div
-                className=" rounded-lg p-2 border-2"
-                key={selectedTab.label}
-                layoutId={selectedTab.label}
-                layout="position"
-                animate={{
-                  borderColor: selectedTab.color
-                }}
-              >
-                {selectedTab.icon}
-              </motion.div>
-            </motion.div>
-          </div>
-
-          <div className="  p-3 rounded-lg flex flex-wrap w-full justify-center content-center  bg-black rounded mt-5">
-            {tabs.map((item) => (
-              <div
-                className={`p-2 ${item === selectedTab ? "hidden" : ""} `}
-                key={item === selectedTab ? "null" : item.label + " eheh"}
-              >
-                {item !== selectedTab ? (
+        <motion.div
+          layout
+          key={"heheAmigo"}
+          className="bg-black p-3 rounded-lg  text-center w-full"
+        >
+          <div
+            className="grid grid-cols-3 gap-4 rounded p-4"
+            style={{ backgroundColor: "#1A1A1A" }}
+          >
+            <div className="z-20 col-span-1 rounded-lg  w-full  rounded flex flex-col gap-4">
+              {tabs.map((item) => (
+                <div className={` ${item === selectedTab ? "hidden" : ""} `}>
                   <motion.div
                     key={item.label}
                     animate={{
                       backgroundColor: item.colorOpacity,
-                      borderColor: item.color
+                      borderColor: item.colorOpacity
                     }}
                     onClick={() => setSelectedTab(item)}
                     layoutId={item.label}
                     layout="position"
-                    className="  rounded-lg outline-white p-2   border-2"
+                    className={`  rounded-lg  p-2   border-2 text-${item.textColor}`}
                   >
                     {item.icon}
                   </motion.div>
-                ) : null}
-              </div>
-            ))}
+                </div>
+              ))}
+            </div>
+
+            <div
+              className="z-10 p-1 col-span-2 rounded-lg "
+              style={{ backgroundColor: "#333333" }}
+            >
+              <motion.div
+                className={`flex rounded-lg justify-center content-center flex-col gap-4 p-3`}
+              >
+                <motion.div
+                  className={`rounded-lg p-2 w-full text-${selectedTab.textColor} border-2`}
+                  key={selectedTab.label}
+                  layoutId={selectedTab.label}
+                  layout="position"
+                  animate={{
+                    backgroundColor: selectedTab.colorOpacity,
+                    borderColor: selectedTab.colorOpacity
+                  }}
+                >
+                  {selectedTab.icon}
+                </motion.div>
+                <motion.div
+                  initial={{ opacity: 0, x: -100 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  exit={{ opacity: 0 }}
+                  key={selectedTab.label + " component"}
+                  layoutId={selectedTab.label + " component"}
+                  layout="position"
+                  transition={{ duration: 0.3 }}
+                >
+                  <selectedTab.component />
+                </motion.div>
+              </motion.div>
+            </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
