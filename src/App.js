@@ -1,7 +1,7 @@
 // Dependencies
 import React from "react";
 import { useState } from "react";
-import { motion } from "framer-motion";
+import { motion } from "framer-motion/dist/es/index";
 import { initialTabs as tabs } from "./ingredients";
 
 // Styles
