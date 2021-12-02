@@ -10,16 +10,6 @@ import "./tailwind.output.css";
 export default function App() {
   const [selectedTab, setSelectedTab] = useState(tabs[0]);
 
-  const list = {
-    visible: { opacity: 1 },
-    hidden: { opacity: 0 }
-  };
-
-  const item = {
-    visible: { opacity: 1, x: 0 },
-    hover: { opacity: 0, x: -100 }
-  };
-
   return (
     <div className=" h-screen bg-black text-white">
       <div className=" ">

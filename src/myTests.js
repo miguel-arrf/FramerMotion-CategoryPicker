@@ -141,7 +141,7 @@ function Mequie() {
         <a
           href="https://drive.google.com/file/d/12_oDRbKgF52lHoJ9TbPL0kvov-eOHGOp/view?usp=sharing"
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
           className="sixthBlockTag_3 px-2.5 py-0.5 rounded-lg bg-green-200 text-base font-light  text-black p-1"
         >
           Report

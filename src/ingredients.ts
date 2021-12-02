@@ -1,9 +1,4 @@
-import {
-  MyComponent,
-  MyComponentNovo,
-  LNComponent,
-  CRCComponent
-} from "./myTests.js";
+import { MyComponent, LNComponent, CRCComponent } from "./myTests.js";
 
 export interface Ingredient {
   icon: string;
