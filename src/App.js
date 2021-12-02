@@ -2,7 +2,7 @@
 import React from "react";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { initialTabs as tabs } from "./ingredients";
+import { initialTabs as tabs } from "./ingredients.ts";
 
 // Styles
 import "./tailwind.output.css";
