@@ -19,7 +19,7 @@ export default function App() {
           className="bg-black p-3 rounded-lg  text-center w-full"
         >
           <div
-            className="grid grid-cols-3 gap-4 rounded p-4"
+            className="grid grid-cols-3 gap-4 rounded-lg p-4"
             style={{ backgroundColor: "#1A1A1A" }}
           >
             <div className="z-20 col-span-1 rounded-lg  w-full  rounded flex flex-col gap-4">
