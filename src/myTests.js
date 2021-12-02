@@ -20,12 +20,25 @@ export class CRCComponent extends React.Component {
 
 function CRC() {
   return (
-    <div className="">
+    <div className="text-left">
       <div className="font-mono font-bold">
-        Complex Science Networks [20 out of 20]
+        Complex Science Networks [x out of 20]
       </div>
-      <div className="mt-3 font-light">
-        Question Classification using Naive Bayes and Cosine Similarities.
+      <div className="mt-3 font-light italic">
+        Indirect reciprocity analysis in complex networks.
+      </div>
+
+      <div className="pt-4">
+        The goal of this project was to replicate a paper on the subject of
+        Complex Science Networks. This project was made in pairs, with another
+        collegue. I wanted to further explore this subject and, as such, I also
+        explored the concept of Indirect Reciprocity on Complex Networks.
+      </div>
+
+      <div className="pt-4">
+        Applying Indirect Reciprocity on Complex Networks with simple rules led
+        to the conclusion that Indirect Reciprocity works very well on Small
+        World networks and not in Scale Free networks.
       </div>
 
       <div className="flex flex-row flex-wrap items-start gap-3 mt-5 ">
@@ -45,12 +58,25 @@ function CRC() {
 
 function LN() {
   return (
-    <div className="">
+    <div className="text-left">
       <div className="font-mono font-bold">
         Natural Language Processing [20 out of 20]
       </div>
-      <div className="mt-3 font-light">
+      <div className="mt-3 font-light italic">
         Question Classification using Naive Bayes and Cosine Similarities.
+      </div>
+      <div className="pt-4">
+        Created a Question Classification system with Machine Learning and NLP
+        techniques such as Naive Bayes, Cosine Similarities and Word2Vec. This
+        system achived a precision and recall of 90% with a small training set.
+      </div>
+      <div className="pt-4">
+        This project helped me to further improve my knowledge about
+        pre-processing pipelines.
+      </div>
+      <div className="pt-4">
+        Just two projects got the maximum grade, in particular I was praised for
+        my creativity.
       </div>
 
       <div className="flex flex-row flex-wrap items-start gap-3 mt-5 ">
