@@ -64,7 +64,7 @@ export default function App() {
                               backgroundColor: item.color,
                               color: "rgb(255,255,255)"
                             }}
-                            className={` group rounded-lg  p-2   border-2 transition-all duration-100`}
+                            className={` group rounded-lg  p-2   border-2 `}
                           >
                             <div
                               key={item.label + "_text"}
@@ -91,8 +91,8 @@ export default function App() {
                             <AnimatePresence exitBeforeEnter>
                               <motion.div
                                 animate={{ opacity: 1, y: 0 }}
-                                initial={{ opacity: 0, y: -20 }}
-                                exit={{ opacity: 0, y: 100 }}
+                                initial={{ opacity: 0, y: 0 }}
+                                exit={{ opacity: 0, y: 0 }}
                                 transition={{ duration: 0.15 }}
                                 key={selectedTab.label + "_component"}
                                 layout
