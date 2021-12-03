@@ -58,16 +58,6 @@ export default function App() {
                             }}
                             onClick={() => {
                               setSelectedTab(item);
-                              if (index === 0) {
-                                changeTest([true, false, false]);
-                                setTheFirst();
-                              } else if (index === 1) {
-                                changeTest([false, true, false]);
-                                setTheSecond();
-                              } else {
-                                changeTest([false, false, true]);
-                                setTheThird();
-                              }
                             }}
                             layoutId={item.label + "_background"}
                             whileHover={{
