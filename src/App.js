@@ -3,51 +3,12 @@ import React from "react";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { initialTabs as tabs } from "./ingredients.ts";
-import { AnimateHeight } from "./AnimateHeight";
 
 // Styles
 import "./tailwind.output.css";
 
 export default function App() {
   const [selectedTab, setSelectedTab] = useState(tabs[0]);
-
-  const [selectedTabs, setSelectedTabs] = useState([true, false, false]);
-
-  const [firstIsSelected, setFirstSelected] = useState(true);
-  const [secondIsSelected, setSecondSelected] = useState(false);
-  const [thirdIsSelected, setThirdSelected] = useState(false);
-
-  function changeTest(values) {
-    setSelectedTabs(values);
-    console.log(selectedTabs);
-  }
-
-  function setTheFirst() {
-    setFirstSelected(true);
-    setSecondSelected(false);
-    setThirdSelected(false);
-  }
-
-  function setTheSecond() {
-    setFirstSelected(false);
-    setSecondSelected(true);
-    setThirdSelected(false);
-  }
-
-  function setTheThird() {
-    setFirstSelected(false);
-    setSecondSelected(false);
-    setThirdSelected(true);
-  }
-
-  const variants = {
-    open: {
-      opacity: 1,
-      height: "auto",
-      x: 0
-    },
-    collapsed: { opacity: 1, height: "auto", x: 30 }
-  };
 
   return (
     <div className=" h-screen bg-black text-white">
