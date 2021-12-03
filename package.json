@@ -5,10 +5,14 @@
   "dependencies": {
     "framer-motion": "5.3.3",
     "react": "^16.8.6",
+    "react-app-rewired": "2.1.8",
+    "react-collapse": "5.1.1",
     "react-dom": "^16.8.6",
+    "react-height-transition": "1.0.0",
     "react-scripts": "3.0.1",
-    "tailwindcss": "2.2.19",
-    "react-app-rewired": "2.1.8"
+    "resize-observer-polyfill": "1.5.1",
+    "styled-components": "5.3.3",
+    "tailwindcss": "2.2.19"
   },
   "scripts": {
     "build:tailwind": "tailwindcss build src/tailwind.css -o src/tailwind.output.css",
@@ -23,7 +27,11 @@
     "extends": "react-app"
   },
   "browserslist": {
-    "production": [">0.2%", "not dead", "not op_mini all"],
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
