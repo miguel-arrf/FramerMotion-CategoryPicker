@@ -43,7 +43,7 @@ export default function App() {
                             style={{
                               backgroundColor: item.colorOpacity,
                               borderColor: item.colorOpacity,
-                              fontWeight: item === selectedTab ? "800" : "400",
+                              fontWeight: item === selectedTab ? "800" : "800",
                               color:
                                 item === selectedTab
                                   ? "rgb(255,255,255)"
@@ -64,7 +64,7 @@ export default function App() {
                               backgroundColor: item.color,
                               color: "rgb(255,255,255)"
                             }}
-                            className={` group rounded-lg  p-2   border-2 `}
+                            className={` group rounded-lg  p-2  border-2 `}
                           >
                             <div
                               key={item.label + "_text"}
